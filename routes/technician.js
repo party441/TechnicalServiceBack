@@ -1,8 +1,8 @@
-const dbConnection = require('../config/connection');
+const connection = require('../config/connection');
 
 
 module.exports = app => {
-  const connection = dbConnection();
+  //const connection = dbConnection();
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   /**                                     TECHNICIAN VIEWS TASKS ASSIGNED THEM                                                    */  
   app.get('/technician/tasks/:tech_id',(req,res)=>{

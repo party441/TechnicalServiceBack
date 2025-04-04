@@ -1,12 +1,19 @@
 var mysql = require('mysql2')
  
 var connection = mysql.createConnection({
-    host: 'sql8.freesqldatabase.com',
-    user: '	sql8771272',
-    password:'1glfXvXzf1',
-    database: 'techservices',
-    port:3306
+
+    host: 'sql8.freemysqlhosting.net',
+
+        user: 'sql8771272',
+
+        password: '1glfXvXzf1',
+
+        database: 'sql8771272',
+
+        port: 3306
+
 });
+ 
 connection.connect((err) => {
 
     if (!err)

@@ -1,8 +1,8 @@
-dbconnection = require('../config/connection');
+connection = require('../config/connection');
 
 
 module.exports = app => {
-  const connection = dbconnection();
+ // const connection = dbconnection();
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   /*                                          VIEW DEPARTMENT REQUESTS*/
   app.get('/hod/getDept-Requests/:hod_id', (req, res) => {

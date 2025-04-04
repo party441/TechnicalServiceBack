@@ -1,11 +1,11 @@
 const { result } = require('@hapi/joi/lib/base');
 const { body } = require('express-validator');
 const { json } = require('express/lib/response');
-const dbConnection = require('../config/connection');
+const connection = require('../config/connection');
 const data_exporter = require('json2csv').Parser;
 
 module.exports = app => {
-  const connection = dbConnection();
+
   // app.use(expressValidator());
   connection.connect(function (err) {
     if (err) {

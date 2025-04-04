@@ -1,13 +1,13 @@
 const express = require('express');
 //const { body } = require('express-validator');
-const dbConnection = require('../config/connection');
+const connection = require('../config/connection');
 const Joi = require('@hapi/joi');
 const { result } = require('@hapi/joi/lib/base');
 const { body } = require('express-validator');
 
 
 module.exports = app => {
-  const connection = dbConnection();
+  //const connection = dbConnection();
   //app.use(expressValidator());
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   ////CREATE A REQUEST
